@@ -16,3 +16,12 @@ class TV:
     # Turn off this TV
     def turn_off(self):
         self.on = False
+ 
+    # Returns the channel for this TV
+    def get_channel(self):
+        return self.channel
+    
+    # Sets a new channel for this TV
+    def set_channel(self, channel):
+        if self.on and 1 <= channel <= 120:
+            self.channel = channel
