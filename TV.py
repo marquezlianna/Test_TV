@@ -54,3 +54,12 @@ class TV:
     def volume_down(self):
         if self.on and self.volume_level > 1:
             self.volume_level -= 1
+            
+# a Test Driver program named TestTV that will create two objects from Class TV and will produce the following output:
+    # tv1's channel is 30 and volume level is 3 
+    # tv2's channel is 3 and volume level is 2 channel
+    
+class TestTV:
+    def __init__(self):
+        self.tv1 = TV()
+        self.tv2 = TV()
