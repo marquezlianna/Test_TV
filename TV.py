@@ -63,3 +63,24 @@ class TestTV:
     def __init__(self):
         self.tv1 = TV()
         self.tv2 = TV()
+
+    def run(self):
+        self.tv1.turn_on()
+        self.tv1.set_channel(30)
+        self.tv1.set_volume(3)
+
+        self.tv2.turn_on()
+        self.tv2.set_channel(3)
+        self.tv2.set_volume(2)
+
+        print("TV 1 Channel:", self.tv1.get_channel())
+        print("TV 1 Volume:", self.tv1.get_volume())
+
+        print("TV 2 Channel:", self.tv2.get_channel())
+        print("TV 2 Volume:", self.tv2.get_volume())
+
+
+# Test the TV class
+test = TestTV()
+test.run()
+    
