@@ -79,8 +79,6 @@ class TestTV:
         print('\033[1;34;40m'f"TV 2 Channel:", self.tv2.get_channel())
         print('\033[1;34;40m'f"TV 2 Volume:", self.tv2.get_volume())
 
-
 # Test the TV class
 test = TestTV()
 test.run()
-    
